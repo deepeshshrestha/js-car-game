@@ -1,0 +1,38 @@
+body {
+  background: #000000;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.container .row {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.container #road {
+  background: #3f3d41;
+  position: relative;
+  border: 4px solid #696767;
+  width: 800px;
+  height: 600px;
+}
+
+#metrics {
+  width: 450px;
+  margin: 0 10px;
+}
+
+#metrics .board {
+  width: 100%;
+  color: #aaa4a4;
+  padding: 15px 10px;
+  font-size: 25px;
+  border: 2px solid gray;
+}
+
+.instructions {
+  width: 100%;
+  color: #aaa4a4;
+  border: 2px solid gray;
+  padding: 10px;
+}
