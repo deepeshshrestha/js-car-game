@@ -1,8 +1,10 @@
 let road = document.getElementById("road");
-for (var i = 0; i <= 4; i++) {
+let roadHeight = (road.style.height = "650px");
+let roadWidth = (road.style.width = "800px");
+for (let i = 0; i <= 4; i++) {
   createLanes(i);
 }
-for (var i = 0; i <= 3; i++) {
+for (let i = 0; i < 3; i++) {
   createCars(i);
 }
 createUser();
@@ -31,30 +33,27 @@ function createCars(i) {
   oppCar.style.position = "absolute";
   switch (i) {
     case 0:
-      oppCar.style.left = "5%";
+      oppCar.style.left = "15%";
       break;
     case 1:
       oppCar.style.left = "40%";
       break;
     case 2:
-      oppCar.style.left = "75%";
-      break;
-    case 3:
-      oppCar.style.left = "25%";
+      oppCar.style.left = "80%";
       break;
   }
   road.appendChild(oppCar);
 }
 
 function createLanes(i) {
-  var lane_l = document.createElement("div");
+  let lane_l = document.createElement("div");
   lane_l.id = "lane_l" + i;
   lane_l.classList.add("lane");
   lane_l.style.left = "33%";
   lane_l.style.top = "-5%";
   lane_l.style.top = i * 18 + "%";
 
-  var lane_r = document.createElement("div");
+  let lane_r = document.createElement("div");
   lane_r.id = "lane_r" + i;
   lane_r.classList.add("lane");
   lane_r.style.left = "66%";

@@ -2,6 +2,7 @@ body {
   background: #000000;
   box-sizing: border-box;
   font-family: "Roboto";
+  overflow: hidden;
 }
 
 .container .row {
