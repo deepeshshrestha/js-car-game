@@ -17,6 +17,15 @@ body {
   height: 600px;
 }
 
+.container #road .lane {
+  background: #ffffff;
+  width: 4px;
+  height: 90px;
+  position: absolute;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 #metrics {
   width: 450px;
   margin: 0 10px;
@@ -28,6 +37,25 @@ body {
   padding: 15px 10px;
   font-size: 25px;
   border: 2px solid gray;
+}
+
+#m_res {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #292929;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  display: none;
+}
+
+#btn_res {
+  width: 100%;
+  border: none;
+  background-color: white;
+  font-size: 40px;
+  margin-top: 10%;
 }
 
 .instructions {
